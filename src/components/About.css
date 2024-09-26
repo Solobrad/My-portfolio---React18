@@ -1,0 +1,76 @@
+#about {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+.contact-container {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  margin-top: 20px; 
+
+}
+
+#about .profile-pic {
+    flex: 1;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    margin-right: 50px;
+ }
+
+ .about-content {
+    flex: 2;
+    padding-left: 20px;
+    max-width: 900px;
+  }
+  
+  .contact-details {
+    margin-top: 20px;
+  }
+
+  .button {
+    display: inline-block; /* Ensure the button displays properly */
+    padding: 10px 20px; /* Add padding for a button-like appearance */
+/* Button background color */
+background: linear-gradient(135deg, #4A90E2, #357ABD);
+    color: white; /* Button text color */
+    text-decoration: none; /* Remove underline from link */
+    border-radius: 5px; /* Slightly round the corners */
+    margin-right: 70px;
+  }
+  
+  .button:hover {
+    background: linear-gradient(135deg, #357ABD, #2A6DB0); /* Darken button on hover */
+  }
+
+  .bio-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between bio items */
+  }
+  
+  .bio-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .bio-icon {
+    margin-right: 20px; /* Space between icon and description */
+    font-size: 1.5rem; /* Adjust icon size */
+  }
+  
+  .bio-description {
+    flex-grow: 1; /* Ensure description takes remaining space */
+  }

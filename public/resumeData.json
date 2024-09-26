@@ -3,14 +3,9 @@
       "project": "#",
       "github": "https://github.com/Solobrad",
       "name": "Nicholas Poon Tze Jian",
-      "image": "profile.jpg",
-      "bio": "A passionate AI enthusiast working on cutting-edge solutions.",
-      "address": {
-        "street": "123 AI Road",
-        "city": "AI City",
-        "state": "AI State",
-        "zip": "12345"
-      },
+      "image": "profile.jpeg",
+      "bio1": "A zealous AI enthusiast specialised in TRAINING and FINE-TUNING models, executing scalable DEPLOYMENTS, and implementing STATE-OF-THE-ART methodologies to transcend the boundaries of AI innovation.",
+      "bio2": "Full-stack developer proficient in software frameworks, tools, and libraries with practical experience.",
       "phone": "123-456-7890",
       "email": "solobrad@example.com",
       "resumedownload": "https://example.com/resume.pdf"

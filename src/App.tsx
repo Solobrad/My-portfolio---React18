@@ -10,55 +10,12 @@ import {
   Text,
   useColorMode,
 } from "@chakra-ui/react";
+import About from "./components/About";
 
 function App() {
   const { colorMode } = useColorMode();
   const [count, setCount] = useState(0);
   const [resumeData, setResumeData] = useState<ResumeData | null>(null);
-  //   main: {
-  //     project: "#",
-  //     github: "https://github.com/Solobrad",
-  //     name: "Nicholas Poon Tze Jian",
-  //     description: (
-  //       <>
-  //         A fervent AI enthusiast, perpetually hungry for mastering AI realms. I
-  //         cultivate my expertise to remain cutting-edge by exploring the latest
-  //         <Text
-  //           as="span"
-  //           color="gray.200"
-  //           fontSize="3xl"
-  //           fontWeight="bold"
-  //           textShadow="0 0 5px rgba(255, 165, 0, 0.7)"
-  //         >
-  //           {" "}
-  //           TOOLS{" "}
-  //         </Text>
-  //         ,
-  //         <Text
-  //           as="span"
-  //           color="gray.200"
-  //           fontSize="3xl"
-  //           fontWeight="bold"
-  //           textShadow="0 0 5px rgba(255, 165, 0, 0.7)"
-  //         >
-  //           {" "}
-  //           MODELS{" "}
-  //         </Text>
-  //         ,and enlightening{" "}
-  //         <Text
-  //           as="span"
-  //           color="gray.200"
-  //           fontSize="3xl"
-  //           fontWeight="bold"
-  //           textShadow="0 0 5px rgba(255, 165, 0, 0.7)"
-  //         >
-  //           {" "}
-  //           ARTICLES
-  //         </Text>
-  //       </>
-  //     ),
-  //   },
-  // });
 
   useEffect(() => {
     const getResumeData = async () => {
@@ -79,7 +36,7 @@ function App() {
   return (
     <>
       <Header data={resumeData.main} />
-      {/* <About data={this.state.resumeData.main} /> */}
+      <About data={resumeData.main} />
     </>
   );
 }

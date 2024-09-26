@@ -9,6 +9,11 @@ export type ResumeData = {
     project: string;
     github: string;
     name: string;
+    image: string; // Added image property
+    bio: string; // Added bio property
+    phone: string; // Added phone property
+    email: string; // Added email property
+    resumedownload: string; // Added resumedownload property
     description: {
       text: string; // Regular text with placeholders for highlighted words
       highlighted: string[]; // Array of highlighted words
@@ -28,7 +33,7 @@ class Header extends Component<HeaderProps> {
 
     return (
       <Box
-        id="home"
+        id="header"
         height="100vh"
         width="100%"
         backgroundImage="url('/Neural_Network2.jpeg')"
@@ -39,6 +44,7 @@ class Header extends Component<HeaderProps> {
         flexDirection="column"
         justifyContent="center"
         alignItems="center"
+        position="relative"
       >
         <Box
           as="nav"
