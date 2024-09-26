@@ -1,0 +1,19 @@
+{
+    "main": {
+      "project": "#",
+      "github": "https://github.com/Solobrad",
+      "name": "Nicholas Poon Tze Jian",
+      "image": "profile.jpg",
+      "bio": "A passionate AI enthusiast working on cutting-edge solutions.",
+      "address": {
+        "street": "123 AI Road",
+        "city": "AI City",
+        "state": "AI State",
+        "zip": "12345"
+      },
+      "phone": "123-456-7890",
+      "email": "solobrad@example.com",
+      "resumedownload": "https://example.com/resume.pdf"
+    }
+  }
+  
