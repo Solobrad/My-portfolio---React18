@@ -217,7 +217,7 @@ class Header extends Component<HeaderProps> {
             <Icon as={AiOutlineArrowDown} boxSize={12} />
           </Link>
         </Box>
-        <Box textAlign="center" position="absolute" bottom="30px" right="30px">
+        <Box textAlign="center" position="absolute" bottom="10px" right="30px">
           <Text color="white" fontSize="lg">
             Built with React 18 & Chakra UI
           </Text>
