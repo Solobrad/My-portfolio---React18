@@ -90,13 +90,15 @@ class Resume extends Component<ResumeProps> {
 
             <div className="nine columns main-col">
               <div className="row item">
-                <div className="twelve columns main-col secondary-text">
+                <div className="tmain-col secondary-text">
                   {educationElements}
                 </div>
               </div>
             </div>
           </div>
         </motion.div>
+
+        <hr className="section-divider" />
 
         <motion.div {...animationProps} className="row skill constrain-box">
           <div className="row work">
@@ -116,6 +118,8 @@ class Resume extends Component<ResumeProps> {
             </div>
           </div>
         </motion.div>
+
+        <hr className="section-divider" />
 
         <motion.div {...animationProps} className="row skill constrain-box">
           <div className="row skill">
