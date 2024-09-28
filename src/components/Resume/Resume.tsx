@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import { motion } from "framer-motion";
 import { ResumeData } from "../Header";
 import "./Resume.css";
@@ -21,12 +21,7 @@ class Resume extends Component<ResumeProps> {
   render() {
     if (!this.props.data) return null;
 
-    const {
-      skillmessage,
-      education,
-      work,
-      skills: skillsData,
-    } = this.props.data;
+    const { skills: skillsData } = this.props.data;
 
     const educationElements = this.props.data.education.map(function (
       education
@@ -88,7 +83,7 @@ class Resume extends Component<ResumeProps> {
           <div className="row education">
             <div className="three columns header-col">
               <h1 className="primary-text">
-                <Text fontSize="3xl">Education</Text>
+                <Text fontSize="2xl">Education</Text>
                 <div className="pulsing-bar" />
               </h1>
             </div>
@@ -107,7 +102,7 @@ class Resume extends Component<ResumeProps> {
           <div className="row work">
             <div className="three columns header-col">
               <h1 className="primary-text">
-                <Text fontSize="3xl">Work</Text>
+                <Text fontSize="2xl">Work</Text>
                 <div className="pulsing-bar" />
               </h1>
             </div>
@@ -126,7 +121,7 @@ class Resume extends Component<ResumeProps> {
           <div className="row skill">
             <div className="three columns header-col">
               <h1 className="primary-text">
-                <Text fontSize="3xl">Skills</Text>
+                <Text fontSize="2xl">Skills</Text>
                 <div className="pulsing-bar" />
               </h1>
             </div>

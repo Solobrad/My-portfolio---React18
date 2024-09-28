@@ -18,12 +18,13 @@
 }
 
 .pulsing-bar {
-  width: 60%; /* Full width of the container */
+  width: 50%; /* Full width of the container */
   height: 5px; /* Height of the bar */
   background-color: transparent; /* Futuristic color (cyan) */
   position: relative; /* To allow absolute positioning of pseudo-element */
   overflow: hidden;
-  margin-top: 0.5rem; /* Hide overflow for pseudo-element */
+  margin-top: 0.4rem; /* Hide overflow for pseudo-element */
+  margin-bottom: 1rem; /* Hide overflow for pseudo-element */
 }
 
 .pulsing-bar::after {
@@ -87,7 +88,7 @@
 }
 
 .skill-head {
-  font-size: 1rem; /* Adjust the size as needed */
+
   font-weight: bold;
   color: var(--primary-text-color);
 }
@@ -105,14 +106,14 @@
   border: 2px solid #ffffff; /* White border for contrast */
   border-radius: 10px;
   /* background: linear-gradient(145deg, #2c3e50, #34495e); */
-  background: url('public/Futuristic_CityScapes.jpeg') no-repeat center center; /* Image as background */
+  background: url('/Futuristic_CityScapes.jpeg') no-repeat center center; /* Image as background */
   background-size: cover;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.8); /* Softer shadow for depth */
 
 }
 
 .fancy-heading {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #ffffff; /* White color for better contrast */
   text-align: center;
   text-transform: uppercase;
@@ -131,7 +132,7 @@
 }
 
 .fancy-item {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin: 0.5rem 0;
   padding: 0.5rem;
   border: 1px solid #ffffff; /* White border for contrast */
@@ -156,22 +157,31 @@
   font-size: 1.5rem;
 }
 
-@media (min-width: 800px) {
+
+@media (min-width: 920px) {
   .constrain-box {
     width: 900px; /* 90% width for tablets */
   }
+
+  .fancy-heading {
+    font-size: 2rem;
+  }
+
 }
 
 @media (min-width: 1224px) {
   .skills-grid {
     grid-template-columns: repeat(3, 1fr); /* Two columns on smaller screens */
   }
+  .fancy-item {
+    font-size: 1.5rem;
+  }
 
 }
 
 @media (min-width: 1724px) {
   .constrain-box{
-  margin: 0 500px 0 auto; /* More space on the right */
+  margin: 0 450px 0 auto; /* More space on the right */
   }
 }
 /* Desktop screens */

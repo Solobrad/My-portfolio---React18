@@ -23,17 +23,7 @@ class About extends Component<AboutProps> {
   render() {
     if (!this.props.data) return null;
 
-    const {
-      name,
-      image,
-      bio1,
-      bio2,
-      phone,
-      email,
-      resumedownload,
-      project,
-      github,
-    } = this.props.data;
+    const { name, bio1, bio2, phone, email, resumedownload } = this.props.data;
     const profilepic = `/profile.jpeg`;
 
     const fadeIn = {
@@ -57,7 +47,7 @@ class About extends Component<AboutProps> {
             />
           </div>
           <div className="about-content">
-            <Text fontSize="3xl" mb={4}>
+            <Text fontSize={{ base: "2xl", md: "3xl" }} mb={4}>
               About Me
             </Text>
 
@@ -74,7 +64,7 @@ class About extends Component<AboutProps> {
 
             <div className="contact-container">
               <div className="contact-details">
-                <Text fontSize="3xl" mb={4}>
+                <Text fontSize={{ base: "2xl", md: "3xl" }} mb={4}>
                   Contact Details
                 </Text>
                 <p className="address">

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import { Box, Text, Link, Button, HStack, Icon } from "@chakra-ui/react";
 import { FaBook, FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
@@ -77,19 +77,6 @@ class Header extends Component<HeaderProps> {
           top={0}
           zIndex={1}
         >
-          <HStack spacing={8} display={{ base: "block", md: "none" }}>
-            <Link
-              className="mobile-btn"
-              href="#nav-wrap"
-              title="Show navigation"
-            >
-              Show navigation
-            </Link>
-            <Link className="mobile-btn" href="#home" title="Hide navigation">
-              Hide navigation
-            </Link>
-          </HStack>
-
           <HStack
             id="nav"
             spacing={4}
@@ -120,7 +107,13 @@ class Header extends Component<HeaderProps> {
               animate={{ opacity: 1 }}
               transition={{ duration: 1 }}
             >
-              <Text as="h1" fontSize="6xl" fontWeight="bold" mb={8}>
+              <Text
+                as="h1"
+                fontSize={{ base: "4xl", md: "6xl" }} // Responsive font size
+                fontWeight="bold"
+                mb={8}
+                fontFamily="'Cinzel', serif"
+              >
                 {name}
               </Text>
             </motion.div>
@@ -138,7 +131,7 @@ class Header extends Component<HeaderProps> {
               >
                 <Text
                   as="h3"
-                  fontSize={{ base: "2xl", lg: "3xl" }}
+                  fontSize={{ base: "lg", lg: "3xl" }}
                   textAlign="center"
                   color="white"
                 >
@@ -147,7 +140,7 @@ class Header extends Component<HeaderProps> {
                   <Text
                     as="span"
                     color="gray.200"
-                    fontSize="3xl"
+                    fontSize={{ base: "xl", lg: "3xl" }}
                     fontWeight="bold"
                     textShadow="0 0 5px rgba(255, 165, 0, 0.7)"
                   >
@@ -157,7 +150,7 @@ class Header extends Component<HeaderProps> {
                   <Text
                     as="span"
                     color="gray.200"
-                    fontSize="3xl"
+                    fontSize={{ base: "xl", lg: "3xl" }}
                     fontWeight="bold"
                     textShadow="0 0 5px rgba(255, 165, 0, 0.7)"
                   >
@@ -167,7 +160,7 @@ class Header extends Component<HeaderProps> {
                   <Text
                     as="span"
                     color="gray.200"
-                    fontSize="3xl"
+                    fontSize={{ base: "xl", lg: "3xl" }}
                     fontWeight="bold"
                     textShadow="0 0 5px rgba(255, 165, 0, 0.7)"
                   >
@@ -177,7 +170,7 @@ class Header extends Component<HeaderProps> {
                   <Text
                     as="span"
                     color="gray.200"
-                    fontSize="3xl"
+                    fontSize={{ base: "xl", lg: "3xl" }}
                     fontWeight="bold"
                     textShadow="0 0 5px rgba(255, 165, 0, 0.7)"
                   >
@@ -199,7 +192,7 @@ class Header extends Component<HeaderProps> {
                     leftIcon={<Icon as={FaBook} boxSize={6} />}
                     height="60px"
                     width="160px"
-                    fontSize="xl"
+                    fontSize={{ base: "lg", md: "xl" }}
                   >
                     Project
                   </Button>
@@ -210,7 +203,7 @@ class Header extends Component<HeaderProps> {
                     leftIcon={<Icon as={FaGithub} boxSize={9} />}
                     height="60px"
                     width="160px"
-                    fontSize="xl"
+                    fontSize={{ base: "lg", md: "xl" }}
                   >
                     Github
                   </Button>

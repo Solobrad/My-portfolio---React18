@@ -22,13 +22,16 @@
 }
 
 #about .profile-pic {
-    flex: 1;
-    position: relative;
-    width: 120px;
-    height: 120px;
-    border-radius: 100%;
-    margin-right: 50px;
- }
+  flex: 1;
+  position: relative;
+  width: 120px; /* Fixed width for the circle */
+  height: 120px;/* Set width to 100% for flexibility */
+ /* Auto height to maintain aspect ratio */
+  border-radius: 50%; /* Use 50% for perfect circle */
+  margin-right: 50px;
+  object-fit: cover; 
+  margin-bottom: 1rem;
+}
 
  .about-content {
     flex: 2;
@@ -43,8 +46,8 @@
   .button {
     display: inline-block; /* Ensure the button displays properly */
     padding: 10px 20px; /* Add padding for a button-like appearance */
-/* Button background color */
-background: linear-gradient(135deg, #4A90E2, #357ABD);
+
+    background: linear-gradient(135deg, #4A90E2, #357ABD);
     color: white; /* Button text color */
     text-decoration: none; /* Remove underline from link */
     border-radius: 5px; /* Slightly round the corners */
@@ -73,4 +76,49 @@ background: linear-gradient(135deg, #4A90E2, #357ABD);
   
   .bio-description {
     flex-grow: 1; /* Ensure description takes remaining space */
+  }
+
+  @media (max-width: 780px) {
+    #about .profile-pic {
+      width: 70px; /* Adjust width for smaller screens */
+      height: 70px; /* Adjust height for smaller screens */
+    }
+    .about-content {
+      padding-left: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .contact-details {
+      flex-direction: column; /* Stack contact details vertically */
+      align-items: flex-start; /* Align items to the start */
+  }
+
+  .button {
+      margin-right: 0; /* Remove right margin on smaller screens */
+      padding: 8px 16px; /* Adjust button padding */
+  }
+
+  .bio-description {
+      font-size: 0.9rem; /* Smaller font size for bio descriptions */
+  }
+  
+  .bio-item {
+      font-size: 0.9rem; /* Smaller font size for bio items */
+  }
+
+  .about-content {
+      font-size: 1rem; /* Adjust font size for content */
+  }
+
+  /* Adjust the title sizes */
+  #about .about-title {
+      font-size: 2rem; /* Smaller title size for mobile */
+  }
+
+  .contact-details > span {
+      font-size: 0.9rem; /* Smaller font size for contact details */
+  }
+  .about-container {
+    display: flex;
+    flex-direction: column;
+  }
   }

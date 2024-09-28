@@ -2,6 +2,10 @@
     --primary-text-color: #111111; /* Almost black */
     --secondary-text-color: #7d7d7d; /* Grey */
   }
+
+  body {
+    font-family: 'Merriweather', serif !important; /* Default for body text */
+  }
   
   .primary-text{
     color: var(--primary-text-color); /* Default primary color */
