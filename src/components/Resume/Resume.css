@@ -1,0 +1,182 @@
+#resume {
+  background: #fff;
+  padding-top: 90px;
+  padding-bottom: 72px;
+  
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;  
+}
+
+.constrain-box {
+  width: 400px; /* Set max width */
+  margin: 0 auto; /* Center the section */
+  padding-top: 50px; /* Top padding */
+  padding-bottom: 42px; /* Bottom padding */
+  
+}
+
+.pulsing-bar {
+  width: 60%; /* Full width of the container */
+  height: 5px; /* Height of the bar */
+  background-color: transparent; /* Futuristic color (cyan) */
+  position: relative; /* To allow absolute positioning of pseudo-element */
+  overflow: hidden;
+  margin-top: 0.5rem; /* Hide overflow for pseudo-element */
+}
+
+.pulsing-bar::after {
+  content: '';
+  position: absolute;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background: linear-gradient(270deg, rgba(0, 255, 204, 0.6), rgba(0, 255, 204, 0)); /* Gradient effect */
+  animation: pulse 2s infinite; /* Pulse animation */
+}
+
+@keyframes pulse {
+  0% {
+    left: -100%; /* Start completely off-screen to the left */
+  }
+  50% {
+    left: 100%; /* Move to the right, completely off-screen */
+  }
+  100% {
+    left: -100%; /* Return to the start position off-screen to the left */
+  }
+}
+
+ .education-container,
+ .skill-container,
+ .work-container {
+   display: flex;
+   flex-direction: row;
+   margin-bottom: 20px;
+ }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;/* Optional: vertically center items */
+    flex-wrap: wrap;
+  }
+  
+  
+  .header-col {
+    flex: 0 0 250px;
+    text-align: left;
+    align-items: flex-start;
+  }
+  
+  .main-col {
+    flex: 3;
+  }
+  
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+
+.org-name {
+  font-size: 1.8rem; /* Adjust the size as needed */
+  font-weight: bold;
+  color: var(--primary-text-color);
+}
+
+.skill-head {
+  font-size: 1rem; /* Adjust the size as needed */
+  font-weight: bold;
+  color: var(--primary-text-color);
+}
+
+.desc{
+  margin-bottom: 1.7rem;
+  margin-top: 0.8rem;
+
+  font-size: 1.1rem;
+}
+
+.skills-category {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 2px solid #ffffff; /* White border for contrast */
+  border-radius: 10px;
+  /* background: linear-gradient(145deg, #2c3e50, #34495e); */
+  background: url('public/Futuristic_CityScapes.jpeg') no-repeat center center; /* Image as background */
+  background-size: cover;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8); /* Softer shadow for depth */
+
+}
+
+.fancy-heading {
+  font-size: 2rem;
+  color: #ffffff; /* White color for better contrast */
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 
+    2px 2px 0 #000000, /* Right shadow */
+    -2px -2px 0 #000000, /* Left shadow */
+    2px -2px 0 #000000, /* Top right shadow */
+    -2px 2px 0 #000000; /* Bottom left shadow */
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Three columns */
+  gap: 1rem; /* Space between items */
+}
+
+.fancy-item {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 1px solid #ffffff; /* White border for contrast */
+  border-radius: 5px;
+  background-color: #1c1c2b; /* Dark background */
+  transition: transform 0.3s;
+  height: 6rem;
+}
+
+.fancy-item:hover {
+  transform: scale(1.05);
+  background-color: #2980b9; /* Bright blue on hover */
+}
+
+.skill-name {
+  font-weight: bold;
+  color: #ecf0f1; /* Light grey for text contrast */
+}
+
+.skill-desc{
+  color: var(--primary-text-color);
+  font-size: 1.5rem;
+}
+
+@media (min-width: 800px) {
+  .constrain-box {
+    width: 900px; /* 90% width for tablets */
+  }
+}
+
+@media (min-width: 1224px) {
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr); /* Two columns on smaller screens */
+  }
+
+}
+
+@media (min-width: 1724px) {
+  .constrain-box{
+  margin: 0 500px 0 auto; /* More space on the right */
+  }
+}
+/* Desktop screens */
+@media (min-width: 1224px) {
+  .constrain-box {
+    width: 1100px; /* 70% width for larger screens */
+  }
+}

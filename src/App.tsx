@@ -11,6 +11,8 @@ import {
   useColorMode,
 } from "@chakra-ui/react";
 import About from "./components/About";
+import Resume from "./components/Resume/Resume";
+import "./global.css"; // This should work
 
 function App() {
   const { colorMode } = useColorMode();
@@ -37,6 +39,7 @@ function App() {
     <>
       <Header data={resumeData.main} />
       <About data={resumeData.main} />
+      <Resume data={resumeData.resume} />
     </>
   );
 }

@@ -9,15 +9,37 @@ export type ResumeData = {
     project: string;
     github: string;
     name: string;
-    image: string; // Added image property
-    bio: string; // Added bio property
-    phone: string; // Added phone property
+    image: string;
+    bio1: string;
+    bio2: string;
+    phone: string;
     email: string; // Added email property
     resumedownload: string; // Added resumedownload property
     description: {
       text: string; // Regular text with placeholders for highlighted words
       highlighted: string[]; // Array of highlighted words
     };
+  };
+  resume: {
+    // Extend to include resume section
+    skillmessage: string; // Message about skills
+    education: {
+      school: string;
+      degree: string;
+      graduated: string;
+      description: string;
+    }[]; // Array of education details
+    work: {
+      company: string;
+      title: string;
+      years: string;
+      description: string;
+    }[]; // Array of work experience details
+    skills: {
+      [category: string]: {
+        name: string; // Skill name
+      }[]; // Array of skills grouped by category
+    }; // Array of skills
   };
 };
 
