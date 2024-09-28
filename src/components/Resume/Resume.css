@@ -175,7 +175,7 @@
     grid-template-columns: repeat(3, 1fr); /* Two columns on smaller screens */
   }
   .fancy-item {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
 }

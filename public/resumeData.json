@@ -6,8 +6,8 @@
       "image": "profile.jpeg",
       "bio1": "Zealous AI enthusiast specialised in TRAINING and FINE-TUNING models, executing scalable DEPLOYMENTS, and implementing STATE-OF-THE-ART methodologies to transcend the boundaries of AI innovation.",
       "bio2": "Full-stack developer proficient in software frameworks, tools, and libraries with practical experience.",
-      "phone": "123-456-7890",
-      "email": "solobrad@example.com",
+      "phone": "",
+      "email": "poontzejian@gmail.com",
       "resumedownload": "https://example.com/resume.pdf"
     },
     "resume":{
@@ -66,11 +66,11 @@
       
     ],
     "Software Development": [
-      { "name": "VueJs" },
-      { "name": "ReactJs" },
-      { "name": "CSS" },
-      { "name": "PHP" },
-      { "name": "JAVA" }
+      { "name": "Next.Js" },
+      { "name": "React" },
+      { "name": "Tailwind CSS" },
+      { "name": "Object-Oriented Programming" },
+      { "name": "Flutter" }
     ]
   }
 
