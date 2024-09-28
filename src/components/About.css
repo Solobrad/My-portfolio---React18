@@ -75,7 +75,9 @@
   }
   
   .bio-description {
-    flex-grow: 1; /* Ensure description takes remaining space */
+    flex-grow: 1; 
+    margin: 0 auto;
+    text-align: justify;
   }
 
   @media (max-width: 780px) {
