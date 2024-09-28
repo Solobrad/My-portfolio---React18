@@ -179,7 +179,7 @@ class Header extends Component<HeaderProps> {
                 </Text>
               </Box>
             </motion.div>
-            <hr />
+
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
