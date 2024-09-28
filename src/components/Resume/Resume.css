@@ -101,6 +101,7 @@
 }
 
 .skills-category {
+  margin-top: 2rem;
   margin-bottom: 2rem;
   padding: 1rem;
   border: 2px solid #ffffff; /* White border for contrast */
