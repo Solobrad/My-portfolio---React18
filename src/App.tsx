@@ -5,6 +5,8 @@ import Header, { ResumeData } from "./components/Header";
 import About from "./components/About";
 import Resume from "./components/Resume/Resume";
 import "./global.css"; // This should work
+import Skills from "./components/Skills/Skills";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   // const { colorMode } = useColorMode();
@@ -32,6 +34,8 @@ function App() {
       <Header data={resumeData.main} />
       <About data={resumeData.main} />
       <Resume data={resumeData.resume} />
+      <Skills data={resumeData.resume} />
+      <Footer />
     </>
   );
 }

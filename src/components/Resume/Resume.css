@@ -103,58 +103,14 @@
   font-size: 1.1rem;
 }
 
-.skills-category {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  padding: 1rem;
-  border: 2px solid #ffffff; /* White border for contrast */
-  border-radius: 10px;
-  /* background: linear-gradient(145deg, #2c3e50, #34495e); */
-  background: url('/Futuristic_CityScapes.jpeg') no-repeat center center; /* Image as background */
-  background-size: cover;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8); /* Softer shadow for depth */
 
-}
 
-.fancy-heading {
-  font-size: 1.5rem;
-  color: #ffffff; /* White color for better contrast */
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  text-shadow: 
-    2px 2px 0 #000000, /* Right shadow */
-    -2px -2px 0 #000000, /* Left shadow */
-    2px -2px 0 #000000, /* Top right shadow */
-    -2px 2px 0 #000000; /* Bottom left shadow */
-}
 
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Three columns */
-  gap: 1rem; /* Space between items */
-}
 
-.fancy-item {
-  font-size: 1.0rem;
-  margin: 0.5rem 0;
-  padding: 0.5rem;
-  border: 1px solid #ffffff; /* White border for contrast */
-  border-radius: 5px;
-  background-color: #1c1c2b; /* Dark background */
-  transition: transform 0.3s;
-  height: 6rem;
-}
 
-.fancy-item:hover {
-  transform: scale(1.05);
-  background-color: #2980b9; /* Bright blue on hover */
-}
 
-.skill-name {
-  font-weight: bold;
-  color: #ecf0f1; /* Light grey for text contrast */
-}
+
+
 
 .skill-desc{
   color: var(--primary-text-color);
@@ -168,6 +124,12 @@
   width: 90%; /* Full width */
 }
 
+.programming-lang{
+  list-style-type: none;
+  color: var(--primary-text-color);
+  padding-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
 
 @media (min-width: 920px) {
   .constrain-box {
@@ -175,9 +137,7 @@
   
   }
 
-  .fancy-heading {
-    font-size: 2rem;
-  }
+
 
   .desc {
     margin-bottom: 1.7rem;
@@ -185,20 +145,10 @@
 
 }
 
-@media (min-width: 1224px) {
-  .skills-grid {
-    grid-template-columns: repeat(3, 1fr); /* Two columns on smaller screens */
-  }
-  .fancy-item {
-    font-size: 1.1rem;
-  }
 
-}
 
 @media (min-width: 1724px) {
-  .constrain-box{
-  margin: 0 450px 0 auto; /* More space on the right */
-  }
+
 }
 /* Desktop screens */
 @media (min-width: 1224px) {

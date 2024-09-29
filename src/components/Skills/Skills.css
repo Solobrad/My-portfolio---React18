@@ -1,0 +1,106 @@
+/* Skills.css */
+.skills-background {
+    background-image: url('./public/Skills_bg3.jpeg'); /* Adjust the path as necessary */
+    background-size: cover; /* Makes the image cover the entire container */
+    background-position: center; /* Centers the image */
+    min-height: 100vh; /* Minimum height of 100% of the viewport height */
+    width: 100%; /* Full width */
+    display: flex; /* Use flexbox for centering content */
+    justify-content: center; /* Horizontally center content */
+    color: white; /* Optional: text color */
+    padding: 10px; /* Optional: padding */
+    text-align: center; /* Center text */
+  }
+
+
+  .column {
+    display: flex;
+    flex-direction: column; 
+
+    align-items: flex-start;/* Optional: vertically center items */
+    flex-wrap: wrap;
+  }
+  
+  .fancy-heading {
+    font-size: 2.4rem;
+    margin-bottom: 3rem;
+    color: #ffffff; /* White color for better contrast */
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 
+      2px 2px 0 #000000, /* Right shadow */
+      -2px -2px 0 #000000, /* Left shadow */
+      2px -2px 0 #000000, /* Top right shadow */
+      -2px 2px 0 #000000; /* Bottom left shadow */
+  }
+
+  .fancy-item {
+    font-size: 1.3rem;
+    margin: 0rem 0rem;
+    border-radius: 5px;
+    transition: transform 0.3s;
+
+    height: 6rem;
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+
+  }
+
+  .skills-category:nth-of-type(2) .fancy-item {
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for all fancy items in the second skill category */
+    /* Alternatively, use a solid color like: background-color: #f0f0f0; */
+}
+
+  
+  .fancy-item:hover {
+    transform: scale(1.05);
+    background-color: rgba(128, 128, 128, 0.8); /* Grey with slight transparency */
+  }
+
+  .skills-header {
+    display: flex;
+    justify-content: center; /* Horizontally center the text */
+    align-items: center; /* Vertically center the text */
+    margin-bottom: 70px; /* Space below the heading */
+    margin-top: 50px;
+    text-align: center; /* Center the text inside the div */
+    color: #ffffff; /* White color for better contrast */
+    background-color:rgba(128, 128, 128, 0.7);
+    width: 100%;
+  }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Three columns */
+    gap: 1rem; /* Space between items */
+  }
+
+  .skills-category {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  padding: 1rem;
+ 
+
+}
+
+  .skill-name {
+    font-weight: bold;
+    color: black; /* Light grey for text contrast */
+  }
+
+  @media (min-width: 920px) {
+    .fancy-heading {
+      font-size: 3rem;
+    }
+  }
+  @media (min-width: 1224px) {
+    .skills-grid {
+      grid-template-columns: repeat(3, 1fr); /* Two columns on smaller screens */
+    }
+    .fancy-item {
+      font-size: 1.7rem;
+    }
+  
+  }

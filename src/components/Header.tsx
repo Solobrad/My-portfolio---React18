@@ -35,7 +35,10 @@ export type ResumeData = {
       title: string;
       years: string;
       description: string;
-    }[]; // Array of work experience details
+    }[];
+    programminglanguages: {
+      name: string;
+    }[];
     skills: {
       [category: string]: {
         name: string; // Skill name
@@ -93,8 +96,8 @@ class Header extends Component<HeaderProps> {
             <Link href="#resume" className="smoothscroll">
               Resume
             </Link>
-            <Link href="#portfolio" className="smoothscroll">
-              Works
+            <Link href="#skills" className="smoothscroll">
+              Skills
             </Link>
             <Link href="#contact" className="smoothscroll">
               Contact

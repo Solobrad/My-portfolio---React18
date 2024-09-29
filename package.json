@@ -17,6 +17,7 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@tsparticles/engine": "^3.5.0",
     "@tsparticles/react": "^3.0.0",
+    "aos": "^2.3.4",
     "framer-motion": "^11.7.0",
     "particles-bg": "^2.5.5",
     "react": "^18.3.1",

@@ -9,19 +9,8 @@ type ResumeProps = {
 };
 
 class Resume extends Component<ResumeProps> {
-  getRandomColor() {
-    let letters = "0123456789ABCDEF";
-    let color = "#";
-    for (let i = 0; i < 6; i++) {
-      color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
-  }
-
   render() {
     if (!this.props.data) return null;
-
-    const { skills: skillsData } = this.props.data;
 
     const educationElements = this.props.data.education.map(function (
       education
@@ -51,22 +40,15 @@ class Resume extends Component<ResumeProps> {
       );
     });
 
-    const skillsElements = Object.keys(skillsData).map(function (category) {
-      return (
-        <div key={category} className="skills-category">
-          <h3 className="skill-head fancy-heading">{category}</h3>
-          <ul className="skills-grid">
-            {skillsData[category].map(function (skill) {
-              return (
-                <div key={skill.name} className="fancy-item">
-                  <span className="skill-name">{skill.name}</span>
-                </div>
-              ); // Accessing skill.name
-            })}
-          </ul>
-        </div>
-      );
-    });
+    const programElement = this.props.data.programminglanguages.map(
+      (programminglanguages) => {
+        return (
+          <li className="programming-lang" key={programminglanguages.name}>
+            <em>{programminglanguages.name}</em>
+          </li>
+        );
+      }
+    );
 
     const animationProps = {
       initial: { opacity: 0, x: -100 },
@@ -125,16 +107,14 @@ class Resume extends Component<ResumeProps> {
           <div className="row skill">
             <div className="three columns header-col">
               <h1 className="primary-text">
-                <Text fontSize="2xl">Skills</Text>
+                <Text fontSize="2xl">Programming Languages</Text>
                 <div className="pulsing-bar" />
               </h1>
             </div>
 
             <div className="nine columns main-col">
-              {/* <p className="skill-desc"></p> */}
-
-              <div className="bars">
-                <ul className="skills secondary-text">{skillsElements}</ul>
+              <div>
+                <ul>{programElement}</ul>
               </div>
             </div>
           </div>

@@ -53,6 +53,15 @@
         "description":"Interpreting Chinese novels into American English, establishing a flair for natural linguistic flow."
       }
     ],
+    "programminglanguages":[
+      { "name": "Python" },
+      { "name": "C" },
+      { "name": "Java" },
+      { "name": "JavaScript" },
+      { "name": "SQL" }
+
+      
+    ],
     "skills": {
    "Artificial Intelligence": [
       { "name": "Large Language Model" },
@@ -66,12 +75,12 @@
       { "name": "Facial Emotion Recognition" }
       
     ],
-    "Software Development": [
-      { "name": "Next.Js" },
-      { "name": "React" },
-      { "name": "Tailwind CSS" },
-      { "name": "Object-Oriented Programming" },
-      { "name": "Flutter" }
+    "AI Basics": [
+      { "name": "Machine Learning" },
+      { "name": "Deep Learning" },
+      { "name": "Natural Language Processing" },
+      { "name": "Computer Vision" },
+      { "name": "Reinforcement Learning" }
     ]
   }
 
