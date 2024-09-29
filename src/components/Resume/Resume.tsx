@@ -131,7 +131,7 @@ class Resume extends Component<ResumeProps> {
             </div>
 
             <div className="nine columns main-col">
-              <p className="skill-desc"></p>
+              {/* <p className="skill-desc"></p> */}
 
               <div className="bars">
                 <ul className="skills secondary-text">{skillsElements}</ul>

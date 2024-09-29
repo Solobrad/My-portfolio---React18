@@ -17,7 +17,7 @@
   display: flex; 
   justify-content: space-between; 
   align-items: center; 
-  margin-top: 20px; 
+  margin-top: 70px; 
 
 }
 
@@ -40,7 +40,7 @@
   }
   
   .contact-details {
-    margin-top: 20px;
+    margin-top: 0px;
   }
 
   .button {
@@ -52,6 +52,7 @@
     text-decoration: none; /* Remove underline from link */
     border-radius: 5px; /* Slightly round the corners */
     margin-right: 70px;
+    margin-top: 120px;
   }
   
   .button:hover {
@@ -61,29 +62,58 @@
   .bio-container {
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Space between bio items */
+    gap: 10px; 
+    margin-bottom: 50px;
   }
   
   .bio-item {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    position: relative;
   }
   
   .bio-icon {
     margin-right: 20px; /* Space between icon and description */
     font-size: 1.5rem; /* Adjust icon size */
   }
+
+  .bio-vertical-line {
+    width: 2px; /* Thickness of the line */
+    background-color: #FF0000; /* White colour for the vertical line */
+    transition: background-color 0.3s;
+    flex-shrink: 0;
+    margin-right: 30px; 
+  }
   
   .bio-description {
     flex-grow: 1; 
-    margin: 0 auto;
+
+    
     text-align: justify;
+    line-height: 1.6;
+  }
+
+  .bio-item {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 30px;
+ }
+  
+  .bio-vertical-line {
+    height: auto;
+  }
+
+  .bio-item:hover .bio-vertical-line {
+    background-color: #87CEEB; /* Change to your desired hover color */
   }
 
   @media (max-width: 780px) {
     #about .profile-pic {
-      width: 70px; /* Adjust width for smaller screens */
-      height: 70px; /* Adjust height for smaller screens */
+      width: 80px; /* Adjust width for smaller screens */
+      height: 80px; 
+      margin: 0 auto; /* Center the image horizontally */
+    display: block;
+    margin-bottom: 20px;
     }
     .about-content {
       padding-left: 10px; /* Reduce padding for smaller screens */

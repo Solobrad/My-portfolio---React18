@@ -12,6 +12,7 @@ export type ResumeData = {
     image: string;
     bio1: string;
     bio2: string;
+    bio3: string;
     phone: string;
     email: string; // Added email property
     resumedownload: string; // Added resumedownload property

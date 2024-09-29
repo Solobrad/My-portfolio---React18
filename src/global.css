@@ -4,8 +4,8 @@
   }
 
   body {
-    font-family: 'Merriweather', serif !important; /* Default for body text */
-  }
+    font-family: 'Merriweather', serif !important;
+    letter-spacing: 0.8px;  }
   
   .primary-text{
     color: var(--primary-text-color); /* Default primary color */
