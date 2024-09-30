@@ -52,7 +52,7 @@ class Skills extends Component<SkillsProps> {
           <div>
             <div className="skills-header">
               <h1>
-                <Text fontSize="5xl">Core Competencies</Text>
+                <Text fontSize={["3xl", "5xl"]}>Core Competencies</Text>
               </h1>
             </div>
 
