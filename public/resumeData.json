@@ -81,6 +81,13 @@
       { "name": "Natural Language Processing" },
       { "name": "Computer Vision" },
       { "name": "Reinforcement Learning" }
+    ],
+    "SoftWare Developments": [
+      { "name": "Next.Js" },
+      { "name": "React" },
+      { "name": "Tailwind CSS" },
+      { "name": "TypeScript" },
+      { "name": "Flutter" }
     ]
   }
 
