@@ -155,7 +155,7 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 415px) {
   .constrain-box {
     width: 300px; /* Set max width */
     margin: 0 auto; /* Center the section */
