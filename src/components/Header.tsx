@@ -6,7 +6,7 @@ import { AiOutlineArrowDown } from "react-icons/ai";
 
 export type ResumeData = {
   main: {
-    project: string;
+    portfolio: string;
     github: string;
     name: string;
     image: string;
@@ -55,7 +55,7 @@ class Header extends Component<HeaderProps> {
   render() {
     if (!this.props.data) return null;
 
-    const { project, github, name } = this.props.data;
+    const { portfolio, github, name } = this.props.data;
 
     return (
       <Box
@@ -148,9 +148,10 @@ class Header extends Component<HeaderProps> {
                     fontWeight="bold"
                     textShadow="0 0 5px rgba(255, 165, 0, 0.7)"
                   >
-                    AI
+                    Artificial Intelligence.{" "}
                   </Text>
-                  . Refining my expertise at the forefront by traversing latest{" "}
+                  Scroll down and get to know more about me.
+                  {/* . Refining my expertise at the forefront by traversing latest{" "}
                   <Text
                     as="span"
                     color="gray.200"
@@ -179,7 +180,7 @@ class Header extends Component<HeaderProps> {
                     textShadow="0 0 5px rgba(255, 165, 0, 0.7)"
                   >
                     ARTICLES
-                  </Text>
+                  </Text> */}
                 </Text>
               </Box>
             </motion.div>
@@ -190,15 +191,15 @@ class Header extends Component<HeaderProps> {
               transition={{ duration: 2 }}
             >
               <HStack spacing={4} justifyContent="center" mt={10}>
-                <Link href={project} isExternal>
+                <Link href={portfolio} isExternal>
                   <Button
                     colorScheme="teal"
                     leftIcon={<Icon as={FaBook} boxSize={6} />}
                     height="60px"
-                    width="160px"
+                    width="200px"
                     fontSize={{ base: "lg", md: "xl" }}
                   >
-                    Project
+                    Full Portfolio
                   </Button>
                 </Link>
                 <Link href={github} isExternal>
