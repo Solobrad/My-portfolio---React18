@@ -151,7 +151,6 @@ class Header extends Component<HeaderProps> {
                     Artificial Intelligence.
                   </Text>{" "}
                   <br />
-                  Scroll down for more.
                   {/* . Refining my expertise at the forefront by traversing latest{" "}
                   <Text
                     as="span"
