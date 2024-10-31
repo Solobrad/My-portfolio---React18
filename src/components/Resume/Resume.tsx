@@ -72,7 +72,7 @@ class Resume extends Component<ResumeProps> {
 
             <div className="nine columns main-col">
               <div className="row item">
-                <div className="tmain-col secondary-text">
+                <div className="main-col secondary-text">
                   {educationElements}
                 </div>
               </div>

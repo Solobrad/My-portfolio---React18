@@ -105,7 +105,7 @@ class Header extends Component<HeaderProps> {
           </HStack>
         </Box>
         <Box className="row banner" textAlign="center" py={10}>
-          <Box className="banner-text">
+          <Box className="">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -148,8 +148,9 @@ class Header extends Component<HeaderProps> {
                     fontWeight="bold"
                     textShadow="0 0 5px rgba(255, 165, 0, 0.7)"
                   >
-                    Artificial Intelligence.{" "}
-                  </Text>
+                    Artificial Intelligence.
+                  </Text>{" "}
+                  <br />
                   Scroll down and get to know more about me.
                   {/* . Refining my expertise at the forefront by traversing latest{" "}
                   <Text
@@ -196,7 +197,7 @@ class Header extends Component<HeaderProps> {
                     colorScheme="teal"
                     leftIcon={<Icon as={FaBook} boxSize={6} />}
                     height="60px"
-                    width="200px"
+                    width={{ base: "170px", md: "200px" }}
                     fontSize={{ base: "lg", md: "xl" }}
                   >
                     Full Portfolio
@@ -207,7 +208,7 @@ class Header extends Component<HeaderProps> {
                     colorScheme="gray"
                     leftIcon={<Icon as={FaGithub} boxSize={9} />}
                     height="60px"
-                    width="160px"
+                    width={{ base: "170px", md: "200px" }}
                     fontSize={{ base: "lg", md: "xl" }}
                   >
                     Github
