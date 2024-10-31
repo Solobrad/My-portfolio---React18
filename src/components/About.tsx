@@ -13,7 +13,7 @@ type AboutProps = {
     phone: string;
     email: string;
     resumedownload: string;
-    project: string; // Include this
+    portfolio: string; 
     github: string;
   };
 };
