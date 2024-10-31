@@ -4,9 +4,9 @@
       "github": "https://github.com/Solobrad",
       "name": "Poon Tze Jian / Nicholas",
       "image": "profile.jpeg",
-      "bio1": "Specialising in building scalable, high-impact models to solve real-world problems, with a focus on hands-on engagement with state-of-the-art AI advancements.",
+      "bio1": "Specialising in building scalable, high-impact models, with a focus on hands-on engagement with state-of-the-art AI advancements.",
       "bio2": "A versatile full-stack developer, proficient in diverse Software Frameworks, Tools, and Libraries. Experienced in building applications from scratch, maintaining robust systems, and deploying advanced AI models.",
-      "bio3": "Dedicated to unraveling the complexities of language, I am a passionate linguist captivated by the convoluted meanings behind words and the nuances of pronunciation through precise enunciation.",
+      "bio3": "Dedicated to unraveling the complexities of language, I am a passionate linguist captivated by the convoluted meanings behind words and the nuances of pronunciation.",
       "phone": "",
       "email": "poontzejian@gmail.com",
       "resumedownload": "https://example.com/resume.pdf"
@@ -21,17 +21,18 @@
         "description":"In group projects, I often take the lead on model training, having successfully completed initiatives across diverse fields, including Natural Language Processing (NLP), Computer Vision, Deep Learning, Machine Learning, and many other domains."
       },
       {
-        "school":"Stanford Online",
-        "degree":"AI Courses",
-        "graduated":"2024 - present",
-        "description":"Accumulated knowledge through detailed lecture explanations and proactive research into unfamiliar concepts."
-      },
-      {
         "school":"Code with Mosh",
         "degree":"Online Software Engineering Courses",
         "graduated":"2023 - present",
         "description":"Possessing a profound understanding of software frameworks, libraries, and concepts gained from in-depth explanation videos and hands-on exercises."
       },
+      {
+        "school":"Stanford Online",
+        "degree":"AI Courses",
+        "graduated":"2024 - present",
+        "description":"Accumulated knowledge through detailed lecture explanations and proactive research into unfamiliar concepts."
+      },
+      
       {
         "school":"Inter-Cultural Language School (ICLS)",
         "degree":"Japanese language",
