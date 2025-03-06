@@ -18,26 +18,26 @@
         "school":"Xiamen University Malaysia",
         "degree":"Bachelor of Engineering in Artificial Intelligence (Hons)",
         "graduated":"September 2021- July 2025",
-        "description":"In group projects, I often take the lead on model training, having successfully completed initiatives across diverse fields, including Natural Language Processing (NLP), Computer Vision, Deep Learning, Machine Learning, and many other domains."
+        "description":""
       },
       {
         "school":"Code with Mosh",
         "degree":"Online Software Engineering Courses",
         "graduated":"2023 - present",
-        "description":"Possessing a profound understanding of software frameworks, libraries, and concepts gained from in-depth explanation videos and hands-on exercises."
+        "description":""
       },
       {
         "school":"Stanford Online",
         "degree":"AI Courses",
         "graduated":"2024 - present",
-        "description":"Accumulated knowledge through detailed lecture explanations and proactive research into unfamiliar concepts."
+        "description":""
       },
       
       {
         "school":"Inter-Cultural Language School (ICLS)",
         "degree":"Japanese language",
         "graduated":"August 2021 - present",
-        "description":"Actively participating in classes and tests equivalent to the JLPT."
+        "description":""
       }
     ],
     "work":[
@@ -45,13 +45,13 @@
         "company":"Mekaniku (HijauTech Sdn. Bhd.)",
         "title":"Part time Software Developer",
         "years":"March 2024 - present",
-        "description":"Enhancing layouts for both web and mobile applications, utilizing Next.js and Flutter, while diligently resolving bugs and maintaining a seamless user experience across platforms."
+        "description":""
       },
       {
         "company":"Greycat Translations",
         "title":"Chinese to English Translator",
         "years":"2022",
-        "description":"Interpreting Chinese novels into American English, establishing a flair for natural linguistic flow."
+        "description":""
       }
     ],
     "programminglanguages":[
