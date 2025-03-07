@@ -2,165 +2,171 @@
   background: #fff;
   padding-top: 90px;
   padding-bottom: 72px;
-  
   display: flex;
   flex-direction: column;
-  
   align-items: center;  
 }
 
-.constrain-box {
-  width: 400px; /* Set max width */
-  margin: 0 auto; /* Center the section */
-  padding-top: 50px; /* Top padding */
-  padding-bottom: 42px; /* Bottom padding */
-  
+/* Section containers */
+.resume-section-container {
+  width: 600px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 42px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
-.pulsing-bar {
-  width: 50%; /* Full width of the container */
-  height: 5px; /* Height of the bar */
-  background-color: transparent; /* Futuristic color (cyan) */
-  position: relative; /* To allow absolute positioning of pseudo-element */
+/* Layout components */
+.resume-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+
+}
+
+.resume-header-column {
+  flex: 0 0 250px;
+  text-align: left;
+  align-items: flex-start;
+}
+
+.resume-content-column {
+  flex: 3;
+  width: auto;
+}
+
+.resume-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Section elements */
+.resume-section-title {
+  color: var(--primary-text-color);
+  margin-bottom: 40px;
+}
+
+.section-divider {
+  height: 1px;
+  background-color: #888;
+  margin: 20px 0;
+  width: 90%;
+}
+
+/* Animation for section titles */
+/* .pulsing-bar {
+  width: 50%;
+  height: 5px;
+  background-color: transparent;
+  position: relative;
   overflow: hidden;
-  margin-top: 0.4rem; /* Hide overflow for pseudo-element */
-  margin-bottom: 1rem; /* Hide overflow for pseudo-element */
+  margin-top: 0.4rem;
+  margin-bottom: 1rem;
 }
 
 .pulsing-bar::after {
   content: '';
   position: absolute;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  background: linear-gradient(270deg, rgba(0, 255, 204, 0.6), rgba(0, 255, 204, 0)); /* Gradient effect */
-  animation: pulse 2s infinite; /* Pulse animation */
-}
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(270deg, rgba(0, 255, 204, 0.6), rgba(0, 255, 204, 0));
+  animation: pulse 2s infinite;
+} */
 
 @keyframes pulse {
   0% {
-    left: -100%; /* Start completely off-screen to the left */
+    left: -100%;
   }
   50% {
-    left: 100%; /* Move to the right, completely off-screen */
+    left: 100%;
   }
   100% {
-    left: -100%; /* Return to the start position off-screen to the left */
+    left: -100%;
   }
 }
 
- .education-container,
- .skill-container,
- .work-container {
-   display: flex;
-   flex-direction: row;
+/* Resume items */
+.resume-item {
+  margin-bottom: 2rem;
+}
 
- }
-
-  .row {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;/* Optional: vertically center items */
-    flex-wrap: wrap;
-  }
-  
-  
-  .header-col {
-    flex: 0 0 250px;
-    text-align: left;
-    align-items: flex-start;
-  }
-  
-  .main-col {
-    flex: 3;
-  }
-  
-
-
-  .item {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-
-.org-name {
-  font-size: 1.8rem; /* Adjust the size as needed */
+.resume-item-title {
+  font-size: 1.8rem;
   font-weight: bold;
   color: var(--primary-text-color);
 }
 
-.skill-head {
-
-  font-weight: bold;
-  color: var(--primary-text-color);
+.resume-item-subtitle {
+  font-size: 1.2rem;
 }
 
-.desc{
-  margin-bottom: 3.2rem;
+.resume-item-description {
   margin-top: 0.8rem;
-
+  margin-bottom: 1.6rem;
   font-size: 1.1rem;
 }
 
-
-
-
-
-
-
-
-
-
-.skill-desc{
-  color: var(--primary-text-color);
-  font-size: 1.5rem;
+.resume-date {
+  font-style: italic;
 }
 
-.section-divider {
-  height: 1px; /* Line thickness */
-  background-color: #888; /* Medium grey color */
-  margin: 20px 0; /* Spacing around the line */
-  width: 90%; /* Full width */
+.bullet {
+  margin: 0 0.5rem;
 }
 
-.programming-lang{
+/* Programming languages section */
+.programming-language-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.programming-language-item {
   list-style-type: none;
   color: var(--primary-text-color);
   padding-bottom: 0.5rem;
   font-size: 1.2rem;
 }
 
+/* Responsive layouts */
 @media (min-width: 920px) {
-  .constrain-box {
-    width: 900px; /* 90% width for tablets */
-  
+  .resume-section-container {
+    width: 900px;
   }
 
-
-
-  .desc {
+  .resume-item-description {
     margin-bottom: 1.7rem;
   }
-
 }
 
-
-
-
-
-/* Desktop screens */
 @media (min-width: 1224px) {
-  .constrain-box {
-    width: 1100px; /* 70% width for larger screens */
+  .resume-section-container {
+    width: 1100px;
   }
 }
 
 @media (max-width: 415px) {
-  .constrain-box {
-    width: 300px; /* Set max width */
-    margin: 0 auto; /* Center the section */
-    padding-top: 50px; /* Top padding */
-    padding-bottom: 42px; /* Bottom padding */
-    
+  .resume-section-container {
+    width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .resume-row {
+    flex-direction: row;
+    margin: 40px;
+  }
+  
+  .resume-header-column {
+    flex: 1 0 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .resume-content-column {
+    flex: 1 0 100%;
   }
 }
